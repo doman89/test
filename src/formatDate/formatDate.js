@@ -7,7 +7,7 @@ export function formatDate(date, format = "YYYY-MM-DD") {
     return `${day}/${month}/${year}`;
   }
 
-  if (format === "YYYY-MM-DD") {
+  if (format !== "YYYY-MM-DD") {
     return `${year}-${month}-${day}`;
   }
 
